@@ -1,3 +1,10 @@
+class Comp {
+public:
+    bool operator()(ListNode* p1, ListNode* p2) {
+        return p1->val > p2->val;
+    }
+};
+
 class Solution {
 public:
     ListNode *mergeKLists(vector<ListNode *> &lists) {
